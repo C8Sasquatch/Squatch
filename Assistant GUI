@@ -1,0 +1,422 @@
+from tkinter import *
+import webbrowser
+
+# physics button functions
+def p_examples():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text="Examples", bg="white")
+    label.pack()
+    canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0, 0, 2000, 2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    #canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0, 0, 2000, 2000))
+    button_back = Button(text="Back", activeforeground='white', activebackground='gray', command=physicst)
+    button_back.place(x=715, y=25)
+def p_unit_1():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text='Physics Unit 1', bg='white')
+    label.pack()
+    canvas = Canvas(frame, width= 500, height=700, bg='white', scrollregion=(0, 0, 2000, 2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    button_back = Button(text="Back", activeforeground='white', activebackground='gray', command=physicst)
+    button_back.place(x=715, y=25)
+    img = PhotoImage(file="physics_unit_1.png")
+    canvas.create_image(50, 50, anchor=NW, image=img)
+    root.mainloop()
+def p_unit_2():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text='Physics Unit 2',bg='white')
+    label.pack()
+    canvas = Canvas(frame, width= 500, height=700, bg='white', scrollregion=(0, 0, 2000, 2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    button_back = Button(text="Back", activeforeground='white', activebackground='gray', command=physicst)
+    button_back.place(x=715, y=25)
+    img = PhotoImage(file='physics_unit_2.png')
+    canvas.create_image(50, 50, anchor=NW, image=img)
+    root.mainloop()
+def p_unit_3():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text='Physics Unit 3',bg='white')
+    label.pack()
+    canvas = Canvas(frame, width= 500, height=700, bg='white', scrollregion=(0, 0, 2000, 2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    button_back = Button(text="Back", activeforeground='white', activebackground='gray', command=physicst)
+    button_back.place(x=715, y=25)
+
+# cal button functions
+def c1_examples():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text="Examples", bg="white")
+    label.pack()
+    canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0, 0, 2000, 2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    #canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0, 0, 2000, 2000))
+    button_back = Button(text="Back", activeforeground='white', activebackground='gray', command=calculus1t)
+    button_back.place(x=715, y=25)
+def c1_unit_1():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text='Calculus 1 Unit 1', bg='white')
+    label.pack()
+    canvas = Canvas(frame, width= 500, height=700, bg='white', scrollregion=(0, 0, 2000, 2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    button_back = Button(text="Back", activeforeground='white', activebackground='gray', command=calculus1t)
+    button_back.place(x=715, y=25)
+    img = PhotoImage(file="")
+    canvas.create_image(50, 50, anchor=NW, image=img)
+    root.mainloop()
+def c1_unit_2():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text='Calculus 1 Unit 2',bg='white')
+    label.pack()
+    canvas = Canvas(frame, width= 500, height=700, bg='white', scrollregion=(0, 0, 2000, 2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    button_back = Button(text="Back", activeforeground='white', activebackground='gray', command=calculus1t)
+    button_back.place(x=715, y=25)
+    img = PhotoImage(file='')
+    canvas.create_image(50, 50, anchor=NW, image=img)
+    root.mainloop()
+def c1_unit_3():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text='Calculus 1 Unit 3',bg='white')
+    label.pack()
+    canvas = Canvas(frame, width= 500, height=700, bg='white', scrollregion=(0, 0, 2000, 2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    button_back = Button(text="Back", activeforeground='white', activebackground='gray', command=calculus1t)
+    button_back.place(x=715, y=25)
+
+# ______________________________________________________________________________________________________________________
+# menu and random add on functions
+
+
+def callback(url):
+    url = 'https://www.jacksonbland.com/'
+    webbrowser.open_new(url)
+
+# ______________________________________________________________________________________________________________________
+# menu button functions
+
+
+def algebra():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text="Important Algebraic Formulas", bg="white")
+    label.pack()
+    canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0,0,2000,2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    img = PhotoImage(file="algform.png")
+    canvas.create_image(10, 10, anchor=NW, image=img)
+    root.mainloop()
+
+
+def volume():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text="Odd Volume Formulas", bg="white")
+    label.pack()
+    canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0,0,2000,2000))
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    img = PhotoImage(file="volumes.png")
+    canvas.create_image(10, 10, anchor=NW, image=img)
+    root.mainloop()
+
+
+def calculus1f():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0,column=0)
+    label = Label(frame, text="Important Calculus 1 Formulas", bg="white")
+    label.pack()
+    canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0,0,2000,2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    img = PhotoImage(file="")
+    canvas.create_image(10, 10, anchor=NW, image=img)
+    root.mainloop()
+
+
+def calculus1t():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0,column=0)
+    label = Label(frame, text="Important Calculus 1 Theorems and Examples", bg="white")
+    label.pack()
+    canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0,0,2000,2000))
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    button1 = Button(canvas, text="See Examples", activeforeground='white', activebackground='gray', command=c1_examples)
+    button1.place(x=660, y=15)
+    button2 = Button(canvas, text="Unit 1", activeforeground="white", activebackground='gray', command=c1_unit_1)
+    button2.place(x=700, y=50)
+    button3 = Button(canvas, text="Unit 2", activeforeground="white", activebackground='gray', command=c1_unit_2)
+    button3.place(x=700, y=75)
+    button4 = Button(canvas, text="Unit 3", activeforeground="white", activebackground='gray', command=c1_unit_3)
+    button4.place(x=700, y=100)
+    img = PhotoImage(file="")
+    canvas.create_image(10, 10, anchor=NW, image=img)
+    root.mainloop()
+
+
+def calculus2f():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0,column=0)
+    label = Label(frame, text="Important Calculus 2 Formulas", bg="white")
+    label.pack()
+    canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0,0,2000,2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    img = PhotoImage(file="")
+    canvas.create_image(10, 10, anchor=NW, image=img)
+    root.mainloop()
+
+
+def calculus2t():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0,column=0)
+    label = Label(frame, text="Important Calculus 2 Theorems and Examples", bg="white")
+    label.pack()
+    canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0,0,2000,2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    img = PhotoImage(file="")
+    canvas.create_image(10, 10, anchor=NW, image=img)
+    root.mainloop()
+
+
+def physicsf():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0,column=0)
+    label = Label(frame, text="Important Physics 101 Formulas")
+    label.pack()
+    canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0,0,2000,2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    img = PhotoImage(file="")
+    canvas.create_image(10, 10, anchor=NW, image=img)
+    root.mainloop()
+
+
+def physicst():
+    frame = Frame(root, width=500, height=700, bg='white')
+    frame.grid(row=0, column=0)
+    label = Label(frame, text="Theorems and examples in Physics 101",bg="white")
+    label.pack()
+    canvas = Canvas(frame, width=500, height=700, bg='white', scrollregion=(0,0,2000,2000))
+
+    hbar = Scrollbar(frame, orient=HORIZONTAL)
+    hbar.pack(side=BOTTOM, fill=X)
+    hbar.config(command=canvas.xview)
+    vbar = Scrollbar(frame, orient=VERTICAL)
+    vbar.pack(side=RIGHT, fill=Y)
+    vbar.config(command=canvas.yview)
+    canvas.config(width=750, height=300)
+    canvas.config(xscrollcommand=hbar.set, yscrollcommand=vbar.set)
+    canvas.pack(side=LEFT, expand=True, fill=BOTH)
+
+    button1 = Button(canvas, text="See Examples", activeforeground='white', activebackground='gray', command=p_examples)
+    button1.place(x=660, y=15)
+
+    button2 = Button(canvas, text="Unit 1", activeforeground="white", activebackground='gray', command=p_unit_1)
+    button2.place(x=700, y=50)
+
+    button3 = Button(canvas, text="Unit 2", activeforeground="white", activebackground='gray', command=p_unit_2)
+    button3.place(x=700, y=75)
+
+    button4 = Button(canvas, text="Unit 3", activeforeground="white", activebackground='gray', command=p_unit_3)
+    button4.place(x=700, y=100)
+
+    img = PhotoImage(file='physics_sheet.png')
+    canvas.create_image(25,50, anchor=NW, image=img)
+    root.mainloop()
+
+
+root = Tk()
+root.minsize(300, 200)
+root.title('If you see a mistake please contact me')
+
+photo = PhotoImage(file="tam-logo.png")
+label = Label(root, image=photo)
+label.grid(row=0, column=0)
+
+link1 = Label(root, text="Contact me", fg='black', bg='white', cursor="hand2")
+link1.place(x=280, y=275)
+link1.bind("<Button-1>", lambda e: callback("http://www.google.com"))
+
+menu = Menu(root)
+root.config(menu=menu)
+
+# ______________________________________________________________________________________________________________________
+
+#   ALGEBRA
+algebraMenu = Menu(menu)
+menu.add_cascade(label="Algebra", menu=algebraMenu)
+algebraMenu.add_separator()
+algebraMenu.add_command(label="Formulas", command=algebra)
+algebraMenu.add_command(label="Volumes", command=volume)
+# CALCULUS 1
+calculus1menu = Menu(menu)
+menu.add_cascade(label="Calculus 1", menu=calculus1menu)
+calculus1menu.add_separator()
+calculus1menu.add_command(label="Formulas", command=calculus1f)
+calculus1menu.add_command(label="Theorems", command=calculus1t)
+# CALCULUS 2
+calculus2menu = Menu(menu)
+menu.add_cascade(label="Calculus 2", menu=calculus1menu)
+calculus2menu.add_separator()
+calculus2menu.add_command(label="Formulas", command=calculus2f)
+calculus2menu.add_command(label="Theorems", command=calculus2t)
+# PHYSICS 1
+physics_menu = Menu(menu)
+menu.add_cascade(label="Physics", menu=physics_menu)
+physics_menu.add_separator()
+physics_menu.add_command(label="Formulas", command=physicsf)
+physics_menu.add_command(label="Theorems", command=physicst)
+
+root.mainloop()
